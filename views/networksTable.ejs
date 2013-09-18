@@ -1,0 +1,27 @@
+    <h1>Network List</h1>
+
+    <table class="networkList">
+    <% for(var i=0; i<data.networks.length; i++) { %>
+     <tr>
+	     <% for(var j=0; j<data.networks[i].length; j++) { %>
+	     <td>
+		     <%= data.networks[i][j] %>
+	     </td>
+	     <% } %>
+     </tr>
+    <% } %>
+    </table>
+
+    <h1>Client List</h1>
+
+    <table class="networkList">
+    <% for(var i=0; i<data.clients.length; i++) { %>
+     <tr>
+            <% for(var j=0; j<data.clients[i].length; j++) { %>
+             <td>
+		     <%= data.clients[i][j] %>
+	     </td>
+  	     <% } %>
+     </tr>   
+     <% } %>
+    </table>
